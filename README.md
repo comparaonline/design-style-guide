@@ -1,6 +1,6 @@
 # ComparaOnline Style Guide
 
-Style guide using [Fabricator](fbrctr/fabricator) to display all defined components used on [ComparaOnline](comparaonline).
+Style guide using [Fabricator](https://github.com/fbrctr/fabricator) to display all defined components used on [ComparaOnline](https://github.com/comparaonline).
 
 ## Contributions
 
