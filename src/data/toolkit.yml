@@ -3,10 +3,22 @@ colors:
     Blue: "#088ab7"
     Orange: "#ff9000"
     Yellow: "#ffdd48"
-  green:
-    Green: "#aacc42"
-  orange:
-    Orange: "#ff9000"
+  green_variations:
+    Lightgreen: "#deefac"
+    Green+10: "#cae183"
+    Green (base): "#aacc42"
+    Green-10: "#92bb2c"
+    Darkgreen: "#88aa2b"
+  orange_variations:
+    Lightorange: "#ffa733"
+    Orange+10: "#ff9c19"
+    Orange (base): "#ff9000"
+    Orange-10: "#E68200"
+    Darkorange: "#eb7005"
   gray:
     Gray4: "#444"
     Gray5: "#555"
+    Gray6: "#666"
+    Gray8: "#888"
+    GrayC2: "#c2c2c2"
+    GrayE: "#eee"
