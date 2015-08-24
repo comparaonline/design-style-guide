@@ -5,28 +5,28 @@
 @import 'partials/colors';
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 /**
 *
-	Table of conversion px to em
-	14px = .875em
-	16px = 1em
-	18px = 1.125em
-	20px = 1.25em
-	22px = 1.375em
-	24px = 1.5em
-	26px = 1.625em
-	28px = 1.75em
-	30px = 1.875em
-	32px = 2em
-	34px = 2.125em
-	36px = 2.25em
-	38px = 2.375em
-	40px = 2.5em
-	42px = 2.625em
+  Table of conversion px to em
+  14px = .875em
+  16px = 1em
+  18px = 1.125em
+  20px = 1.25em
+  22px = 1.375em
+  24px = 1.5em
+  26px = 1.625em
+  28px = 1.75em
+  30px = 1.875em
+  32px = 2em
+  34px = 2.125em
+  36px = 2.25em
+  38px = 2.375em
+  40px = 2.5em
+  42px = 2.625em
 */
 
 .h1,
@@ -35,8 +35,8 @@ body {
 .h4,
 .h5,
 .h6 {
-	font-weight: 400;
-	color: $lightblue;
+  font-weight: 400;
+  color: $lightblue;
 }
 
 .h1 {font-size: 2.625em;}
@@ -45,25 +45,25 @@ body {
 .h4{font-size: 1.25em;}
 
 .headings{
-	border-radius: 3px;
-	border: 1px solid $lightgray;
-	margin-bottom: 20px;
-	padding: 20px;
-	.h1,
-	.h2,
-	.h3,
-	.h4{
-		margin: {
-			top: 0;
-			bottom: 0;
-		}
-	}
-		pre{
-			margin-top: 5px;
-			padding-bottom: 10px;
-			border-bottom: 1px solid $lightgray;
-			&:last-child{
-				border-bottom: 0;
-			}
-		}
+  border-radius: 3px;
+  border: 1px solid $lightgray;
+  margin-bottom: 20px;
+  padding: 20px;
+  .h1,
+  .h2,
+  .h3,
+  .h4{
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
+  }
+    pre{
+      margin-top: 5px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $lightgray;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
 }
