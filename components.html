@@ -69,7 +69,7 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
-							<a href="components.html#button">Button</a>
+							<a href="components.html#buttons">Buttons</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
@@ -143,33 +143,89 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
-<div class="f-item-group" id="button">
+<div class="f-item-group" id="buttons">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Button</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.primary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Primary</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>These are notes associated with this <code>button</code> component.</p>
 
 </div>
 <div class="f-item-preview">
-	<button class="button">Submit</button>
+	<button class="btn btn-primary-green">Cotizar</button>
+<br>
+<br>
+<button class="btn btn-primary-blue">Llámenos</button>
+<br>
+<br>
+<button class="btn btn-primary-orange">Llámenos</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;button class=&quot;btn btn-primary-green&quot;&gt;Cotizar&lt;/button&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;button class=&quot;btn btn-primary-blue&quot;&gt;Llámenos&lt;/button&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;button class=&quot;btn btn-primary-orange&quot;&gt;Llámenos&lt;/button&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="buttons.secondary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>These are notes associated with this <code>button</code> component.</p>
+
+</div>
+<div class="f-item-preview">
+	<button class="btn btn-secondary-green">Cotizar</button>
+<br>
+<br>
+<button class="btn btn-secondary-blue">Llámenos</button>
+<br>
+<br>
+<button class="btn btn-secondary-orange">Llámenos</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;btn btn-secondary-green&quot;&gt;Cotizar&lt;/button&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;button class=&quot;btn btn-secondary-blue&quot;&gt;Llámenos&lt;/button&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;button class=&quot;btn btn-secondary-orange&quot;&gt;Llámenos&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -524,7 +580,8 @@
 
 
 		</div>
-	<script src="assets/fabricator/scripts/f.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/fabricator/scripts/f.js"></script>
 
 	<!-- toolkit scripts -->
 	<script src="assets/toolkit/scripts/toolkit.js"></script>
