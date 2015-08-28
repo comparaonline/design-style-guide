@@ -1,0 +1,105 @@
+.btn {
+  cursor: pointer;
+  border: 0;
+  width: 280px;
+  padding: {
+    top: 8px;
+    bottom: 8px;
+  }
+  border-radius: 4px;
+  color: #fff;
+  font: {
+    size: 24px;
+    family: 'Open Sans';
+    weight: 300;
+  }
+  display: inline-block;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  transition: .4s;
+
+  // Primary
+  @at-root {
+    [class^="btn-primary"],
+    [class*="btn-primary"] {
+      border: {
+        bottom: {
+          width: 3px;
+          style: solid;
+        }
+      }
+    }
+  }
+  &.btn-primary {
+    &-green {
+      background: {
+        color: $lightgreen;
+      }
+      border: {
+        bottom: {
+          color: $darkgreen;
+        }
+      }
+      &:hover {
+        background: {
+          color: $active-lightgreen;
+        }
+      }
+    }
+    &-blue {
+      background: {
+        color: $lightblue;
+      }
+      border: {
+        bottom: {
+          color: $darkblue;
+        }
+      }
+      &:hover {
+        background: {
+          color: lighten($lightblue, 10%);
+        }
+      }
+    }
+    &-orange {
+      background: {
+        color: $orange;
+      }
+      border: {
+        bottom: {
+          color: $darkorange;
+        }
+      }
+      &:hover {
+        background: {
+          color: $active-orange;
+        }
+      }
+    }
+  }
+  // Secondary
+  @at-root {
+    [class^="btn-secondary"],
+    [class*="btn-secondary"] {
+      background: {
+        color: #fff;
+      }
+    }
+  }
+  &.btn-secondary {
+    &-green {
+      border: 1px solid $lightgreen;
+      color: $lightgreen;
+    }
+    &-blue {
+      border: 1px solid $lightblue;
+      color: $lightblue;
+    }
+    &-orange {
+      border: 1px solid $orange;
+      color: $orange;
+    }
+  }
+}
