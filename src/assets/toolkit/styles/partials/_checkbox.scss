@@ -38,6 +38,7 @@
   }
   font: {
     size: 14px;
+    weight: 300;
   }
   &:before {
     transition: .4s;
@@ -50,7 +51,8 @@
     left: 10px;
     top: 30%;
   }
-  &:nth-child(even) {
+  &:nth-child(even),
+  &:first-child {
     margin: {
       right: 10px;
     }
