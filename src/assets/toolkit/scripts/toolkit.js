@@ -19,8 +19,20 @@ $(function() {
     });
   };
 
+  var niceRadio = function niceRadio() {
+    var $niceRadio = $('.nice-radio');
+
+    $niceRadio.parents('.a-question').css('max-width', '350px');
+    $niceRadio.on('change', function() {
+      $(this).parents('.a-question').find('.nice-radio-container').removeClass('nice-radio-active');
+      $('.tooltip-wrapper').removeClass('has-nice-radio-active');
+      $(this).parent().addClass('nice-radio-active').parent().addClass('has-nice-radio-active');
+    });
+  };
+
   var init = function init() {
     niceCheckbox();
+    niceRadio();
   };
 
   init();
