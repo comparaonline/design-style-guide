@@ -11,6 +11,9 @@
 	<!-- Google Font -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 	<!-- /Google Font -->
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
@@ -373,44 +376,111 @@
 
 <div class="f-item-group" id="radio">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Radio</h2>
-		<div class="f-item-controls">
-
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Radio</h2>
 	</div>
+		<div class="f-item-group" id="radio.multiple">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Multiple</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<fieldset class="a-question">
+	<label class="radio-title nice-radio-container">
+		<input type="radio" name="insurance_type" class="nice-radio" id="insurance_type_one_travel">
+		<span class="fa fa-plane travel-icon"></span> Viaje Único
+	</label>
+	<label class="radio-title nice-radio-container">
+		<input type="radio" name="insurance_type" class="nice-radio" id="insurance_type_frequent_travel">
+		<span class="fa-planes travel-icon">
+      <span class="fa fa-plane plane-first"></span>
+		<span class="fa fa-plane plane-second"></span>
+		</span>
+		Viajes Frecuentes
+	</label>
+	<label class="radio-title nice-radio-container">
+		<input type="radio" name="insurance_type" class="nice-radio" id="insurance_type_annual_travel">
+		<span class="fa fa-globe travel-icon"></span> Viaje Anual (365 días)
+	</label>
+	<label class="radio-title nice-radio-container">
+		<input type="radio" name="insurance_type" class="nice-radio" id="insurance_type_pregnancy">
+		<span class="icon-pregnant-woman travel-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.9 300"><path d="M133.1 149.4c4.9 18.1 3.1 34.9-6.4 50.7-.3.6-.7 1.1-1.1 1.7-6.2 8.6-12.4 17.1-26.4 13.1-.2 18.7-.4 35.9-.5 53.2 0 3.7.4 7.3.5 11 .3 7.5-4.1 13-10.8 13.8-6.8.7-12.9-3.6-13.5-11-1.7-20.2-2.7-40.5-4-60.8-.1-1.6 0-3.2 0-5-1.5-.2-2.5-.3-3.5-.4-8.8-.3-8.8-.3-9.5-8.9-1.3-16.4.1-32.6 4.4-48.5 5.5-20.3 2.5-39.6-6.5-58.2-4.7-9.8-3-19.5 5.2-24.7 8.2-5.2 18.1-3.2 24.6 5.6 4.2 5.7 8.4 11.7 11.6 18 5.2 10.2 12.2 18.6 20.7 25.9 8.2 7.2 13.2 18.8 15.2 24.5zM66 70.4c-15.9.1-28.7-12.5-28.8-28.3-.1-15.7 12.7-28.7 28.4-28.8 15.7-.1 28.7 12.7 28.8 28.5.2 15.7-12.5 28.6-28.4 28.6z"/></svg>
+    </span> Viaje Embarazadas
+	</label>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;fieldset class=&quot;a-question&quot;&gt;
+	&lt;label class=&quot;radio-title nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;insurance_type&quot; class=&quot;nice-radio&quot; id=&quot;insurance_type_one_travel&quot;&gt;
+		&lt;span class=&quot;fa fa-plane travel-icon&quot;&gt;&lt;/span&gt; Viaje Único
+	&lt;/label&gt;
+	&lt;label class=&quot;radio-title nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;insurance_type&quot; class=&quot;nice-radio&quot; id=&quot;insurance_type_frequent_travel&quot;&gt;
+		&lt;span class=&quot;fa-planes travel-icon&quot;&gt;
+      &lt;span class=&quot;fa fa-plane plane-first&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;fa fa-plane plane-second&quot;&gt;&lt;/span&gt;
+		&lt;/span&gt;
+		Viajes Frecuentes
+	&lt;/label&gt;
+	&lt;label class=&quot;radio-title nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;insurance_type&quot; class=&quot;nice-radio&quot; id=&quot;insurance_type_annual_travel&quot;&gt;
+		&lt;span class=&quot;fa fa-globe travel-icon&quot;&gt;&lt;/span&gt; Viaje Anual (365 días)
+	&lt;/label&gt;
+	&lt;label class=&quot;radio-title nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;insurance_type&quot; class=&quot;nice-radio&quot; id=&quot;insurance_type_pregnancy&quot;&gt;
+		&lt;span class=&quot;icon-pregnant-woman travel-icon&quot;&gt;
+      &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 189.9 300&quot;&gt;&lt;path d=&quot;M133.1 149.4c4.9 18.1 3.1 34.9-6.4 50.7-.3.6-.7 1.1-1.1 1.7-6.2 8.6-12.4 17.1-26.4 13.1-.2 18.7-.4 35.9-.5 53.2 0 3.7.4 7.3.5 11 .3 7.5-4.1 13-10.8 13.8-6.8.7-12.9-3.6-13.5-11-1.7-20.2-2.7-40.5-4-60.8-.1-1.6 0-3.2 0-5-1.5-.2-2.5-.3-3.5-.4-8.8-.3-8.8-.3-9.5-8.9-1.3-16.4.1-32.6 4.4-48.5 5.5-20.3 2.5-39.6-6.5-58.2-4.7-9.8-3-19.5 5.2-24.7 8.2-5.2 18.1-3.2 24.6 5.6 4.2 5.7 8.4 11.7 11.6 18 5.2 10.2 12.2 18.6 20.7 25.9 8.2 7.2 13.2 18.8 15.2 24.5zM66 70.4c-15.9.1-28.7-12.5-28.8-28.3-.1-15.7 12.7-28.7 28.4-28.8 15.7-.1 28.7 12.7 28.8 28.5.2 15.7-12.5 28.6-28.4 28.6z&quot;/&gt;&lt;/svg&gt;
+    &lt;/span&gt; Viaje Embarazadas
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="radio.two-options">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Two Options</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<fieldset class="a-question yes-no-question">
+	<label class="nice-radio-container">
+		<input type="radio" name="preexisting-passenger" id="radio1" class="nice-radio"> Sí
+	</label>
+
+	<label class="nice-radio-container">
+		<input type="radio" name="preexisting-passenger" id="radio2" class="nice-radio"> No
+	</label>
+</fieldset>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;fieldset class=&quot;a-question yes-no-question&quot;&gt;
+	&lt;label class=&quot;nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;preexisting-passenger&quot; id=&quot;radio1&quot; class=&quot;nice-radio&quot;&gt; Sí
+	&lt;/label&gt;
+
+	&lt;label class=&quot;nice-radio-container&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;preexisting-passenger&quot; id=&quot;radio2&quot; class=&quot;nice-radio&quot;&gt; No
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
