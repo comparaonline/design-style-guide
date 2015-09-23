@@ -1,0 +1,100 @@
+@import 'partials/placeholders';
+$icon-color: #ccc;
+
+.nice-radio {
+  @extend %reset-checkable-field;
+}
+.a-question {
+  padding: {
+    top: 10px;
+    bottom: 30px;
+  }
+  .nice-radio-container {
+    @extend %nice-field;
+    padding: 10px;
+    width: 280px;
+    font: {
+      size: 14px;
+    }
+    padding: {
+      left: 50px;
+    }
+    &:not(:last-of-type) {
+      margin: {
+        bottom: 10px;
+      }
+    }
+    &.nice-radio-active {
+      @extend %active-nice-field;
+      .fa {
+        color: #FFF;
+      }
+      .icon-pregnant-woman {
+        path {
+          fill: #FFF;
+        }
+      }
+    }
+  }
+}
+.radio-title {
+  color: $darkgray;
+  .fa {
+    color: $icon-color;
+    transition: .4s;
+    font: {
+      size: 22px;
+    }
+  }
+}
+.icon-pregnant-woman {
+  display: inline-block;
+  width: 14px;
+  height: 38px;
+  path {
+    transition: .4s;
+    fill: $icon-color;
+  }
+}
+.travel-icon {
+  position: absolute;
+  left: 30px;
+}
+.fa-planes {
+  left: 24px;
+  .fa-plane {
+    font: {
+      size: 16px;
+    }
+    position: relative;
+    &.plane- {
+      &first {
+        top: -2px;
+      }
+      &second {
+        top: 4px;
+      }
+    }
+  }
+}
+.yes-no-question {
+  .nice-radio-container {
+    width: 49%;
+    padding: {
+      left: 0;
+    }
+    text: {
+      align: center;
+    }
+    &:not(:last-of-type) {
+      margin: {
+        right: 2%;
+      }
+    }
+    input[type="radio"] {
+      opacity: 0;
+      appearance: none;
+      position: absolute;
+    }
+  }
+}
