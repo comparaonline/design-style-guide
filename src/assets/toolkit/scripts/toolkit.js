@@ -76,7 +76,7 @@ $(function() {
     $('.date-field+svg').on('click', function() {
       $(this).prev('.date-field').trigger('click');
 
-  var rangeSlider = function rangeSlider(){
+  var rangeSlider = function rangeSlider() {
     var $rangeslider = $('.rangeslider');
     var $amount = $('.input-range-amount');
 
