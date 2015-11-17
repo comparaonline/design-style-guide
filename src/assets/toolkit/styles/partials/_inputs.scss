@@ -1,0 +1,59 @@
+$tablet: "screen and (min-width: 768px)";
+
+.field-container {
+  position: relative;
+  float: left;
+  width: 266px;
+}
+.field-label {
+  position: absolute;
+  z-index: 1;
+  left: 14px;
+  top: 12px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #888;
+  font-size: 14px;
+}
+.a-field {
+  background: {
+    color: #fff;
+  }
+  width: 100%;
+  text-indent: 6px;
+  height: 42px;
+  font: {
+    size: 14px;
+  }
+  line-height: 3.4;
+  border: 1px solid #ddd;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  @media #{$tablet} {
+    line: {
+      height: 3.8;
+    }
+    height: 46px;
+  }
+}
+.js-focus {
+  .field-label {
+    font: {
+      size: 10px;
+    }
+    left: 8px;
+    top: 4px;
+  }
+}
+.date-field {
+  &+svg {
+    fill: #888;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
