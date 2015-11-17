@@ -47,3 +47,13 @@ $tablet: "screen and (min-width: 768px)";
     top: 4px;
   }
 }
+.date-field {
+  &+svg {
+    fill: #888;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
