@@ -75,6 +75,8 @@ $(function() {
     $('.date-field').after(calendarSvg);
     $('.date-field+svg').on('click', function() {
       $(this).prev('.date-field').trigger('click');
+    });
+  };
 
   var rangeSlider = function rangeSlider() {
     var $rangeslider = $('.rangeslider');
@@ -105,4 +107,5 @@ $(function() {
   init();
 
   return;
+
 });
