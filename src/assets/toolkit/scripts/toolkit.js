@@ -30,9 +30,47 @@ $(function() {
     });
   };
 
+  // Floated Labels
+  var setFloatedLabels = function setFloatedLabels() {
+    var $floatedPlaceholders = $('.a-field');
+
+    $floatedPlaceholders.each(function() {
+      if ($.trim($(this).val()) !== '') {
+        $(this).parents('.field-container').addClass('js-keep-focus').removeClass('js-focus');
+        $(this).parents('.field-container').addClass('js-focus');
+      }
+    });
+    $floatedPlaceholders.each(function() {
+      $(this).on('focus', function() {
+        $(this).parents('.field-container').addClass('js-focus');
+      });
+      $(this).on('blur', function() {
+        if ($.trim($(this).val()) === '') {
+          $(this).parents('.field-container').removeClass('js-focus');
+        }
+      });
+      $(this).on('change', function() {
+        $(this).parents('.field-container').addClass('js-keep-focus');
+        if ($(this).val() === '') {
+          $(this).parents('.field-container').removeClass('js-focus js-keep-focus');
+        }
+      });
+    });
+  };
+
+  var setupFieldLabels = function setupFieldLabels() {
+    $('.field-label').on('click', function() {
+      $(this).parents('.field-container')
+        .addClass('js-focus')
+        .find('.a-field').focus();
+    });
+  };
+
   var init = function init() {
     niceCheckbox();
     niceRadio();
+    setFloatedLabels();
+    setupFieldLabels();
   };
 
   init();
