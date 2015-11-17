@@ -78,6 +78,9 @@
 							<a href="components.html#checkbox">Checkbox</a>
 						</li>
 						<li>
+							<a href="components.html#inputs">Inputs</a>
+						</li>
+						<li>
 							<a href="components.html#lists">Lists</a>
 						</li>
 						<li>
@@ -91,9 +94,6 @@
 						</li>
 						<li>
 							<a href="components.html#table">Table</a>
-						</li>
-						<li>
-							<a href="components.html#text-input">Text Input</a>
 						</li>
 						<li>
 							<a href="components.html#textarea">Textarea</a>
@@ -279,6 +279,125 @@
 &lt;/fieldset&gt;</code></pre>
 </div>
 
+
+</div>
+
+
+<div class="f-item-group" id="inputs">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Inputs</h2>
+	</div>
+		<div class="f-item-group" id="inputs.date-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Date Input</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="field-container">
+	<label for="departure_date" class="field-label">Salida</label>
+	<input type="text" id="departure_date" name="departure_date" class="a-field date-field">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;field-container&quot;&gt;
+	&lt;label for=&quot;departure_date&quot; class=&quot;field-label&quot;&gt;Salida&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;departure_date&quot; name=&quot;departure_date&quot; class=&quot;a-field date-field&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="inputs.email-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Email Input</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="field-container">
+	<label for="email" class="field-label">Correo electrónico</label>
+	<input type="email" id="email" name="email" class="a-field">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;field-container&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;field-label&quot;&gt;Correo electrónico&lt;/label&gt;
+	&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; class=&quot;a-field&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="inputs.range-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Range Input</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="input-group focus focus-always range-slider">
+	<div class="input-control text-single">
+		<label class='input-control-label'>Value</label>
+		<input type="text" class="input-range-amount" value="20000" disabled="disabled"></input>
+		<input type="range" class="rangeslider" min="700" max="20000" step="100">
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;input-group focus focus-always range-slider&quot;&gt;
+	&lt;div class=&quot;input-control text-single&quot;&gt;
+		&lt;label class=&#x27;input-control-label&#x27;&gt;Value&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;input-range-amount&quot; value=&quot;20000&quot; disabled=&quot;disabled&quot;&gt;&lt;/input&gt;
+		&lt;input type=&quot;range&quot; class=&quot;rangeslider&quot; min=&quot;700&quot; max=&quot;20000&quot; step=&quot;100&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="inputs.text-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Text Input</h3>
+				<div class="f-item-controls">
+
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="field-container">
+	<label for="email" class="field-label">Nombre</label>
+	<input type="text" id="email" name="name" class="a-field">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;field-container&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;field-label&quot;&gt;Nombre&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;email&quot; name=&quot;name&quot; class=&quot;a-field&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -613,32 +732,6 @@
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="text-input">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Text Input</h2>
-		<div class="f-item-controls">
-
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<label for="textInput">Text input</label>
-<input type="text" id="textInput" />
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label for=&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;textInput&quot; /&gt;</code></pre>
 </div>
 
 
